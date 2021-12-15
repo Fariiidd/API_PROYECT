@@ -14,7 +14,7 @@ const productShcema = new Schema({
     discount: String,
 }, {
     timestamps: true,
-    versionKey: fale,
+    versionKey: false,
 })
 
 export default model("Product", productShcema)
