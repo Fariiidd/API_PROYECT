@@ -1,17 +1,17 @@
 const Products = {
-    createProduct: (req, res) => {
+    createProduct = (req, res) => {
         res.json("Creating product");
     },
-    getProcuts: (req, res) => {
+    getProcuts = (req, res) => {
         res.json("Getting products");
     },
-    getOneProduct: (req, res) => {
+    getOneProduct = (req, res) => {
         res.json("Getting one product");
     },
-    updateProduct: (req, res) => {
+    updateProduct = (req, res) => {
         res.json("Updating product");
     },
-    deleteProduct: (req, res) => {
+    deleteProduct = (req, res) => {
         res.json("Deleting product");
     }
 }
