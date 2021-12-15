@@ -5,7 +5,6 @@ import productController from '../controllers/products.controllers'
 
 const router = Router()
 
-
 router.post("/", productController.createProduct)
 router.get("/", productController.getProcuts)
 router.get("/:id", productController.getOneProduct)
