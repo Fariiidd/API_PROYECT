@@ -6,6 +6,7 @@ import connectDB from "./config/db";
 
 // Routes
 import productRouter from './routes/products.routes'
+import authRouter from './routes/auth.routes'
 
 connectDB()
 const app = express()
@@ -15,5 +16,6 @@ app.use(express.json())
 
 // ROUTER
 app.use("/api/products", productRouter)
+app.use("/api/auth", authRouter)
 
 export default app
