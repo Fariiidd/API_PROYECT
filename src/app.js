@@ -1,5 +1,6 @@
 import express from "express";
 import morgan from "morgan";
+import { createRoles } from './libs/initialRole'
 
 // DB
 import connectDB from "./config/db";
@@ -8,8 +9,11 @@ import connectDB from "./config/db";
 import productRouter from './routes/products.routes'
 import authRouter from './routes/auth.routes'
 
-connectDB()
+
 const app = express()
+createRoles()
+
+connectDB()
 app.use(morgan('dev'))
 app.use(express.json())
 
