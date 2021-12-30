@@ -8,7 +8,7 @@ const Products = {
             product = new Product(req.body)
             await product.save()
             res.status(201).json(product)
-            console.log(product)
+            // console.log(product)
             
         } catch (error) {
             console.log(error)
